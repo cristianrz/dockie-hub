@@ -2,7 +2,8 @@
 set -eu
 RELEASE="3.11.6"
 FILENAME="alpine-minirootfs-$RELEASE-x86_64.tar.gz"
+DST="$HOME"/.local/lib/pocker/systems/alpine"
 
+mkdir -p "$DST"
+cd "$DST"
 wget -q "http://dl-cdn.alpinelinux.org/alpine/v3.11/releases/x86_64/$FILENAME"
-tar xzf  "$FILENAME"
-rm "$FILENAME"
