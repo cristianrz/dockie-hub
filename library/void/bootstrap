@@ -1,9 +1,0 @@
-#!/bin/sh
-set -eu
-RELEASE="20200425_17:10"
-FILENAME="rootfs.tar.xz"
-URL="https://us.images.linuxcontainers.org/images/voidlinux/current/amd64/musl/$RELEASE/$FILENAME"
-
-wget -q "$URL"
-tar -xf  "$FILENAME"
-rm "$FILENAME"
