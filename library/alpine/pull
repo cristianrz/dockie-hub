@@ -2,7 +2,7 @@
 set -eu
 RELEASE="3.11.6"
 FILENAME="alpine-minirootfs-$RELEASE-x86_64.tar.gz"
-DST="$HOME/.local/lib/pocker/systems/alpine"
+DST="$HOME/.local/lib/pocker/images/alpine"
 
 mkdir -p "$DST"
 cd "$DST"
