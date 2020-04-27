@@ -1,5 +1,4 @@
 #!/bin/sh
-set -x
 set -eu
 NAME="crux"
 RELEASE="3.5"
@@ -10,11 +9,11 @@ ORIG="$POCKER_IMAGES/$NAME"
 mkdir iso
 cp "$ORIG/$FILENAME" iso
 cd iso
-7z x "$FILENAME"
+7z x "$FILENAME" >/dev/null
 mv rootfs.tar.xz ../
 cd ..
 rm -rf iso
 pwd
-tar xf rootfs.tar.xz
-#rm -rf rootfs.tar.xz
+tar xf rootfs.tar.xz >/dev/null
+rm -rf rootfs.tar.xz
 
