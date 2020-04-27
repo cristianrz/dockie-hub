@@ -4,6 +4,6 @@ NAME="void"
 RELEASE="20200425_17:10"
 
 FILENAME="rootfs.tar.xz"
-ORIG="$HOME/.local/lib/pocker/images/$NAME"
+ORIG="$POCKER_IMAGES/$NAME"
 
 tar -xf "$ORIG/$FILENAME"

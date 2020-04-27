@@ -5,7 +5,7 @@ NAME="crux"
 RELEASE="3.5"
 
 FILENAME="$NAME-$RELEASE.iso"
-ORIG="$HOME/.local/lib/pocker/images/$NAME"
+ORIG="$POCKER_IMAGES/$NAME"
 
 mkdir iso
 cp "$ORIG/$FILENAME" iso
