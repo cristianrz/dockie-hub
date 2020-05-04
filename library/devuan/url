@@ -1,1 +1,18 @@
-https://us.images.linuxcontainers.org/images/devuan/ascii/amd64/default/20200426_11:50/rootfs.tar.xz
+#!/bin/sh
+
+set -eu
+
+curl -s https://us.images.linuxcontainers.org/images/devuan/ascii/amd64/default/ |
+	awk '
+	BEGIN {
+		FS="/"
+	}
+	/\[DIR\]/ {
+		gsub(/<[^>]*>/,"")
+		last=$1
+	}
+
+	END {
+		printf "https://us.images.linuxcontainers.org/images/devuan/ascii/amd64/default/%s/rootfs.tar.xz\n",last
+	}
+	' | xargs wget

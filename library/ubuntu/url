@@ -1,1 +1,1 @@
-https://us.images.linuxcontainers.org/images/ubuntu/focal/amd64/default/20200426_07:42/rootfs.tar.xz
+echo https://us.images.linuxcontainers.org/images/ubuntu/focal/amd64/default/20200426_07:42/rootfs.tar.xz

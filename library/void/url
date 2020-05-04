@@ -1,1 +1,1 @@
-https://us.images.linuxcontainers.org/images/voidlinux/current/amd64/musl/20200425_17:10/rootfs.tar.xz
+echo https://us.images.linuxcontainers.org/images/voidlinux/current/amd64/musl/20200425_17:10/rootfs.tar.xz
