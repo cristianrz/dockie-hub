@@ -15,4 +15,4 @@ curl -s https://us.images.linuxcontainers.org/images/devuan/ascii/amd64/default/
 	END {
 		printf "https://us.images.linuxcontainers.org/images/devuan/ascii/amd64/default/%s/rootfs.tar.xz\n",last
 	}
-	' | xargs wget
+	'
