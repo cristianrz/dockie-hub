@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+NAME="gentoo"
+RELEASE="20200421"
+
+FILENAME="stage3-amd64-musl-vanilla-$RELEASE.tar.bz2"
+ORIG="$POCKER_IMAGES/$NAME"
+
+tar -xf "$ORIG/$FILENAME"
